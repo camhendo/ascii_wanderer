@@ -1,0 +1,33 @@
+[package]
+name = "ascii_wanderer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "0.19"
+# web-sys = "0.3"
+yew-utils = "0.2"
+wasm-bindgen = { version="0.2"}
+gloo = "0.8"
+gloo-events= "0.1"
+gloo-console = "0.2"
+gloo-utils = "0.1"
+yew-vdom-gen = "0.1"
+rand = {version="0.8", features=["min_const_gen"]}
+getrandom = {version="0.2", features=["js"]}
+slab = "0.4"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "console",
+    "Element",
+    "HtmlElement",
+    "MouseEvent",
+    "KeyboardEvent",
+    "DomRect",
+    "CustomEvent",
+]
+
