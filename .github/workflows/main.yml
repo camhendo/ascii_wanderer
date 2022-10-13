@@ -24,8 +24,7 @@ jobs:
           version: 'latest'
 
       - name: Add web target
-        run: rustup target add wasm32-unknown-unknown
-        run: rustup target add wasm32-wasi
+        run: rustup target add wasm32-unknown-unknown && rustup target add wasm32-wasi
 
       - name: Build project
         run: trunk build --public-url ascii_wanderer --release
