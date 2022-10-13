@@ -4,7 +4,7 @@
 # The index HTML file to drive the bundling process.
 target = "index.html"
 # The output dir for all final assets.
-dist = "docs"
+dist = "dist"
 # The public URL from which assets are to be served.
 # https://raw.githubusercontent.com/camhendo
 public_url = "/"#portfolio/"
